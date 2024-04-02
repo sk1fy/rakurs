@@ -1,0 +1,33 @@
+$input-border: #cccccc;
+$input-border-focus: #17505B;
+$input-border-error: #dc3545;
+$input-background: #ffffff;
+$input-background-disabled: #e9ecef;
+$input-text-disabled: #6c757d;
+
+.input-field {
+  border: 1px solid $input-border;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #495057;
+  height: 18px;
+
+  &:focus {
+    border-color: $input-border-focus;
+    outline: none;
+  }
+
+  &.filled {
+    background-color: $input-background;
+  }
+
+  &.error {
+    border-color: $input-border-error;
+  }
+
+  &:disabled {
+    background-color: $input-background-disabled;
+    color: $input-text-disabled;
+  }
+}
